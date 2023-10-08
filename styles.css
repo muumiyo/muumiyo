@@ -1,27 +1,23 @@
-/* Основной стиль для документа */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #333; /* Темный фон */
-    color: #fff; /* Белый текст */
+    background-color: #333;
+    color: #fff;
     margin: 0;
     padding: 0;
 }
 
-/* Стиль для заголовков */
 h1, h2, h3 {
-    color: #6a9e71; /* Зеленый цвет заголовков, как в шапке */
-    font-size: 26px; /* Увеличенный размер шрифта для заголовков */
+    color: #6a9e71;
+    font-size: 26px;
 }
 
-/* Стиль для шапки */
 header {
-    background-color: #1a1a1a; /* Темно-серая шапка */
+    background-color: #1a1a1a;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 
-/* Стиль для основного контента */
 main {
     display: flex;
     flex-wrap: wrap;
@@ -29,37 +25,32 @@ main {
     padding: 20px;
 }
 
-/* Стиль для секций */
 section {
-    background-color: #1e1e1e; /* Темно-серый фон для секций */
-    border-radius: 10px; /* Увеличиваем радиус скругления углов для более мягкого вида */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Тень для блоков (белая) */
+    background-color: #1e1e1e; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
     padding: 20px;
     margin: 10px;
     flex-basis: calc(50% - 20px);
 }
 
-/* Стиль для текста внутри секций */
 section p {
-    font-size: 18px; /* Увеличенный размер текста внутри секций */
-    line-height: 1.4; /* Межстрочный интервал для лучшей читаемости */
+    font-size: 18px;
+    line-height: 1.4;
 }
 
-/* Стиль для ссылок */
 a {
-    color: #4CAF50; /* Зеленые ссылки */
+    color: #4CAF50;
     text-decoration: none;
 }
 
-/* Стиль для футера */
 footer {
-    background-color: #1a1a1a; /* Темно-серый фон для футера */
+    background-color: #1a1a1a;
     color: #fff;
     text-align: center;
     padding: 10px;
 }
 
-/* Media-запрос для мобильных устройств */
 @media (max-width: 768px) {
     main {
         flex-direction: column;
@@ -68,53 +59,41 @@ footer {
     section {
         flex-basis: 100%;
     }
-}
-
-/* Стили для печати */
-@media print {
-    body {
-        background-color: #fff;
-        color: #000; /* Черный текст при печати */
+    
+    .at-symbol {
+        top: 50px;
+        left: 10px;
     }
     
-    header, footer {
-        display: none;
-    }
-    
-    main {
-        padding: 0;
-    }
-    
-    section {
-        border: none;
-        box-shadow: none;
-        page-break-inside: avoid;
-    }
 }
 
 @media (min-width: 1024px) {
     main {
-        flex-basis: 100%; /* Занимает всю ширину */
+        flex-basis: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
     section {
-        flex-basis: calc(24% - 20px); /* Ширина блоков во втором ряду */
-        margin-top: 20px; /* Отступ между блоками */
+        flex-basis: calc(24% - 20px);
+        margin-top: 20px;
     }
 
     #security-info {
-        flex-basis: 100%; /* Занимает всю ширину */
-        margin-top: 0; /* Убираем отступ сверху для блока "security-info" */
+        flex-basis: 100%;
+        margin-top: 0;
+    }
+    .at-symbol {
+        top: 50px;
+        left: 10px;
     }
 }
 .at-symbol {
     position: absolute;
-    top: 10px; /* Adjust the top position as needed */
-    left: 10px; /* Adjust the left position as needed */
-    font-size: 76px; /* Adjust the font size as needed */
-    color: #6a9e71; /* Adjust the color as needed */
-    z-index: 9999; /* Ensures it's on top of other content */
+    top: 10px;
+    left: 10px;
+    font-size: 76px;
+    color: #6a9e71; 
+    z-index: 9999;
 }
