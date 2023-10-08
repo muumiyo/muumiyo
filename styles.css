@@ -110,3 +110,11 @@ footer {
         margin-top: 0; /* Убираем отступ сверху для блока "security-info" */
     }
 }
+.at-symbol {
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    left: 10px; /* Adjust the left position as needed */
+    font-size: 76px; /* Adjust the font size as needed */
+    color: #6a9e71; /* Adjust the color as needed */
+    z-index: 9999; /* Ensures it's on top of other content */
+}
